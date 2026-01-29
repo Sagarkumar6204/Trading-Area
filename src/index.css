@@ -11,6 +11,111 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.nav-link{
-  margin-left:40px;
+.navbar-logo {
+  width: 140px;
+}
+
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.navbar .nav-link:hover {
+  color: #387ed1;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .navbar-logo {
+    width: 120px;
+  }
+
+  .navbar .nav-link {
+    margin: 10px 0;
+  }
+}
+
+#supportHero {
+  background-color: rgb(56, 126, 209);
+  color: white;
+  padding-bottom: 40px;
+}
+
+#supportHero a {
+  color: white;
+  text-decoration: none;
+}
+
+#supportHero a:hover {
+  text-decoration: underline;
+}
+
+/* Top Bar */
+.supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+/* Main Content */
+.supportContent {
+  padding: 40px 5%;
+}
+
+/* Left Section */
+.supportLeft h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+#supportHero input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.supportLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.supportLinks a {
+  font-size: 14px;
+}
+
+/* Right Section */
+.supportRight h2 {
+  margin-bottom: 15px;
+}
+
+.supportRight ol {
+  padding-left: 20px;
+}
+
+.supportRight li {
+  margin-bottom: 10px;
+}
+
+/* 🔥 Responsive Tweaks */
+@media (max-width: 768px) {
+  .supportWrapper {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .supportLeft,
+  .supportRight {
+    margin-top: 30px;
+  }
+
+  .supportLeft h1 {
+    font-size: 18px;
+  }
 }
